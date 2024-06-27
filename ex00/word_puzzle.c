@@ -6,7 +6,7 @@
 /*   By: mnaito <mnaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 16:17:55 by mnaito            #+#    #+#             */
-/*   Updated: 2024/06/27 16:53:48 by mnaito           ###   ########.fr       */
+/*   Updated: 2024/06/27 17:03:50 by mnaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,17 +68,37 @@ int word_puzzle(size_t N, char **words)
 	return (1);
 }
 
-int main() {
-    size_t	N1;
-	N1 = 2;
-    char *words1[] = {"dash", "hard"};
-    printf("Input: N = %zu, words = {\"%s\", \"%s\"} Output: %d\n", N1, words1[0], words1[1], word_puzzle(N1, words1));
+/* test function */
 
-    size_t N2 = 3;
-    char *words2[] = {"dash", "too", "hard"};
-    printf("Input: N = %zu, words = {\"%s\", \"%s\", \"%s\"} Output: %d\n", N2, words2[0], words2[1], words2[2], word_puzzle(N2, words2));
+//static void test_word_puzzle(size_t N, char **words)
+//{
+//    printf("Input: N = %zu, words = {", N);
+//    for (size_t i = 0; i < N; i++) {
+//        printf("\"%s\"", words[i]);
+//        if (i < N - 1)
+//            printf(", ");
+//    }
+//    printf("} Output: %d\n", word_puzzle(N, words));
+//}
 
-    return (0);
-}
+//int main() {
+//    size_t N1 = 2;
+//    char *words1[] = {"dash", "hard"};
+//    test_word_puzzle(N1, words1);
+
+//    size_t N2 = 3;
+//    char *words2[] = {"dash", "too", "hard"};
+//    test_word_puzzle(N2, words2);
+
+//    size_t N3 = 4;
+//    char *words3[] = {"apple", "elephant", "tiger", "rabbit"};
+//    test_word_puzzle(N3, words3);
+
+//    size_t N4 = 5;
+//    char *words4[] = {"cat", "tiger", "rabbit", "bat", "tiger"};
+//    test_word_puzzle(N4, words4);
+
+//    return 0;
+//}
 
  
